@@ -35,7 +35,7 @@
         .me-2 - margin-right: 0.5rem (margin-end)
     <button class="btn btn-outline-success"> кнопка і її стилі
 
-    Повний текст прикладу меню:
+    Повний код прикладу меню:
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
                 <a href="" class="navbar-brand"><img src="img/svg/logo.svg" alt=""></a>
@@ -56,4 +56,40 @@
                 </div>
             </div>
         </nav>
+
+Слайдер-карусель:
+    <div class="carousel slide"> блок-обгортка для каруселі
+        .carousel.slide базові класи каруселі
+        #carouselControls ідентифікатор каруселі для слайдів
+    data-bs-ride="carousel" запускає автозміну слайдів
+    <div class="carousel-inner"> контейнер слайдів
+    <div class="carousel-item"> клас слайда
+        .active потрібен одному слайду (першому) для відображення
+    <img src="" alt="" class="d-block w-100">
+        .d-block - display: block; .w-100 - width: 100%;
+    <a class="carousel-control-{prev/next}" клас кнопки зміни
+        href="#carouselControls" посилання на карусель
+        data-bs-slide="{prev/next}"> значення напрямку слайду
+    <span class="carousel-control-{prev/next}-icon"> іконка кнопки
+
+    Повний код:
+        <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/jpg/look.com.ua-3423.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/jpg/look.com.ua-391461.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/jpg/look.com.ua-391696.jpg" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <a class="carousel-control-prev" role="button" href="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" role="button" href="#carouselControls"data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
 

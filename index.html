@@ -31,6 +31,12 @@
     </nav>
     <main>
         <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/jpg/look.com.ua-3423.jpg" alt="" class="d-block w-100">
@@ -42,8 +48,12 @@
                     <img src="img/jpg/look.com.ua-391696.jpg" alt="" class="d-block w-100">
                 </div>
             </div>
-            <a class="carousel-control-prev" role="button" href="#carouselControls" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-            <a class="carousel-control-next" role="button" href="#carouselControls"data-bs-slide="next"><span class="carousel-control-next-icon"></span></a>
+            <a class="carousel-control-prev" href="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls"data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </main>
 
