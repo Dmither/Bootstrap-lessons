@@ -93,3 +93,29 @@
             </a>
         </div>
 
+Сітка
+    Розміри прописані в документації Layout/Breakpoints
+    .container - контейнер з брейкпоїнтами
+    .container-fluid - 100% ширини завжди
+    .container-{bp} - 100% до брейкпоїнта, далі як container
+    .row - фундаментальний клас сітки для групування об'єктів
+    col-{bp}-{n} задає межі об'єкта на n/12 ширини для bp
+    gy-4 - gap-y на вказану величину
+
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="balloon-title">
+                    <img class="balloon" src="img/svg/balloon.svg" alt="">
+                    <h4>Lorem, ipsum.</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis dicta dolor fuga nobis numquam.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="balloon-title">
+                    <img class="balloon" src="img/svg/balloon.svg" alt="">
+                    <h4>Lorem, ipsum.</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis dicta dolor fuga nobis numquam.</p>
+            </div>
+            
+        </div>

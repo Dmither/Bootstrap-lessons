@@ -1,4 +1,28 @@
 main{
     margin-top: 61px;
+    margin-bottom: 61px;
 }
-
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 767px){
+    .navbar-collapse{
+        display: block;
+    }
+}
+.main-carousel{
+    margin-bottom: 40px;
+}
+.balloon{
+    width: 30px;
+    height: 30px;
+}
+.balloon-title{
+    display: flex;
+}
