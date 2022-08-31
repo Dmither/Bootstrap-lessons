@@ -101,7 +101,7 @@
     .row - фундаментальний клас сітки для групування об'єктів
     col-{bp}-{n} задає межі об'єкта на n/12 ширини для bp
     gy-4 - gap-y на вказану величину
-
+    Приклад:
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="balloon-title">
@@ -117,5 +117,34 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis dicta dolor fuga nobis numquam.</p>
             </div>
-            
+        </div>
+
+Модальне вікно:
+    <button class="btn btn-outline-success"> кнопка зі стилями
+        data-bs-toggle="modal" визиває модальне вікно
+        data-bs-target="#exampleModal" вказує яке саме
+    <div class="modal fade">
+        .modal - клас вікна
+        .fade - анімація вікна
+        aria-hidden="true" приховує на старті вікно
+        area-labelledby="exampleModalLabel" 
+    <div class="modal-dialog"> базовий клас
+    <div class="modal-content"> обгортка для каскаду контенту:
+        .modal-header, .modal-body, .modal-footer
+    <button class="btn-close"> кнопка закриття вікна з середини
+
+    Повний приклад коду модального вікна і кнопки його виклику:
+        <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog"><div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lorem, ipsum.</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-secondary">Save</button>
+                </div>
+            </div></div>
         </div>
