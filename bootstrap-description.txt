@@ -132,7 +132,6 @@
     <div class="modal-content"> обгортка для каскаду контенту:
         .modal-header, .modal-body, .modal-footer
     <button class="btn-close"> кнопка закриття вікна з середини
-
     Повний приклад коду модального вікна і кнопки його виклику:
         <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
@@ -148,3 +147,4 @@
                 </div>
             </div></div>
         </div>
+
