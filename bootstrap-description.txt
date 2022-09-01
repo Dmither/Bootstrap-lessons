@@ -249,3 +249,7 @@
             </div>
         </div>
 
+Класи відступів:
+    mx-auto - margin: 0 auto;
+    my-0, mt-0, mb-0, ms-0, me-0
+    px, py, pt, pb, ps, pe
