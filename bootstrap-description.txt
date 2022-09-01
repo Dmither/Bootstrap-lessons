@@ -151,6 +151,7 @@
 Форма реєстрації модального вікна:
     .col-form-label - стилізація лейбла
     .form-control - стилізація форм
+    .form-check .form-check-input .form-check-label - стилі для input, radio та checkbox
 
     Повний код прикладу:
         <div class="modal-body">
@@ -197,3 +198,54 @@
                 </fieldset>
             </form>
         </div>
+
+Аккордеон:
+    <a class="btn btn-secondary"> приклад через посилання
+        href="#multiCollapse1" 
+        aria-controls="multiCollapse1" область контролю
+        data-bs-toggle="collapse" звертає контент
+    <button class="btn btn-secondary">
+        data-bs-target=".multi-collapse" 
+        aria-controls="multiCollapse1 multiCollapse2"
+    <div class="collapse multi-collapse show">
+        .collapse .multi-collapse визначають звертання
+        .show - показані при завантаженні сторінки
+        id="multiCollapse1" - визначає чим управляється
+
+    Повний текст:
+        <p>
+            <a href="#multiCollapse1" data-bs-toggle="collapse" aria-controls="multiCollapse1" role="button" aria-expanded="false" class="btn btn-secondary">Odd</a>
+            <button class="btn btn-secondary" data-bs-toggle="collapse" type="button" data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">Even</button>
+            <button class="btn btn-secondary" data-bs-toggle="collapse" type="button" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">Both</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse show" id="multiCollapse1">
+                    <div class="card card-body">
+                        <img src="img/jpg/look.com.ua-3423.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapse2">
+                    <div class="card card-body">
+                        <img src="img/jpg/look.com.ua-391461.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapse1">
+                    <div class="card card-body">
+                        <img src="img/jpg/look.com.ua-391696.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapse2">
+                    <div class="card card-body">
+                        <img src="img/jpg/look.com.ua-392056.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
